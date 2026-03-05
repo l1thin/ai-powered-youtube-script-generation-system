@@ -1,0 +1,12 @@
+fastapi[all]
+langchain
+langgraph
+langchain-openai
+langchain-community
+faiss-cpu
+chromadb
+huggingface_hub
+python-dotenv
+streamlit
+pydantic
+pytest
