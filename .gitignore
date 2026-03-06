@@ -1,10 +1,118 @@
-venv/
+# =========================
+# Python
+# =========================
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+build/
+dist/
+downloads/
+eggs/
+.eggs/
+*.egg-info/
+*.egg
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+pytest_cache/
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+
+# =========================
+# Virtual Environment
+# =========================
+venv/
+env/
+ENV/
+.venv/
+
+# =========================
+# Environment Variables
+# =========================
 .env
+.env.*
+
+# =========================
+# IDE / Editors
+# =========================
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# =========================
+# OS Files
+# =========================
 .DS_Store
-data/raw/*
-!data/raw/.gitkeep
-data/processed/*
-!data/processed/.gitkeep
+Thumbs.db
+
+# =========================
+# Logs
+# =========================
+logs/
 *.log
+
+# =========================
+# Data files
+# =========================
+data/*
+!data/.gitkeep
+
+# =========================
+# Model files
+# =========================
+*.pt
+*.pth
+*.bin
+*.gguf
+*.onnx
+
+models/*
+!models/.gitkeep
+
+# =========================
+# Vector DB / embeddings
+# =========================
+chroma/
+vector_db/
+faiss_index/
+
+# =========================
+# Temporary files
+# =========================
+tmp/
+temp/
+*.tmp
+
+# =========================
+# Cache
+# =========================
+.cache/
+*.cache
+
+# =========================
+# Build
+# =========================
+*.spec
+*.manifest
+
+# =========================
+# Misc
+# =========================
+*.sqlite3
+*.db

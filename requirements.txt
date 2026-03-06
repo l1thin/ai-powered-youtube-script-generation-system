@@ -1,12 +1,10 @@
-fastapi[all]
+fastapi
+uvicorn
 langchain
 langgraph
-langchain-openai
-langchain-community
-faiss-cpu
 chromadb
-huggingface_hub
+faiss-cpu
+sentence-transformers
+transformers
 python-dotenv
-streamlit
 pydantic
-pytest
