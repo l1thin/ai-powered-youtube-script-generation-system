@@ -1,10 +1,10 @@
 fastapi
 uvicorn
 langchain
-langgraph
-chromadb
-faiss-cpu
+langchain-community
+qdrant-client
+youtube-transcript-api
 sentence-transformers
-transformers
 python-dotenv
+tqdm
 pydantic
