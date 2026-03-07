@@ -1,4 +1,5 @@
 import os
+import json
 from rag.retrievers.chunker import chunk_text
 from rag.vectorstores.qdrant_store import create_vectorstore
 
@@ -11,9 +12,10 @@ def ingest_data():
     for file in os.listdir(PROCESSED):
 
         with open(f"{PROCESSED}/{file}", "r", encoding="utf-8") as f:
-            text = f.read()
 
-        chunks = chunk_text(text)
+            data = json.load(f)
+
+        chunks = chunk_text(data["cleaned_transcript"])
 
         all_chunks.extend(chunks)
 

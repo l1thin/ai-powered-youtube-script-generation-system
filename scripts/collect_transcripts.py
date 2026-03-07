@@ -1,4 +1,4 @@
-from utils.youtube_loader import fetch_transcript
+from utils.youtube_metadata_loader import fetch_video_data
 
 videos = [
     "dQw4w9WgXcQ",
@@ -6,7 +6,9 @@ videos = [
 ]
 
 for vid in videos:
+
     print("Downloading:", vid)
-    fetch_transcript(vid)
+
+    fetch_video_data(vid)
 
 print("All transcripts saved")
